@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <style>
+            .absolute_parent {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                padding: 5px;
+                background-color: #00ffff;
+                width: 500px;
+                height: 200px;
+            }
+
+            .absolute_sample {
+                position: absolute;
+                top: 40px;
+                left: 100px;
+                padding: 5px;
+                background-color: blueviolet;
+                width: 300px;
+                height: 120px;
+            }
+
+            .absolute_small {
+                position: absolute;
+                top: 30px;
+                left: 50px;
+                padding: 5px;
+                background-color: pink;
+                width: 200px;
+                height: 60px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .haikei {
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="absolute_parent">
+            背景表示
+            <div class="absolute_sample">
+                <div class="absolute_small">
+                    <p class="haikei">ロゴ表示</p>
+                </div>
+            </div>
+        </div>  
+    </body>
+</html>
