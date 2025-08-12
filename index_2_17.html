@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>C-7 課題</title>
+        <style>
+            body{
+                background-color: white;
+            }
+            .absolute_back {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background-color: #ffebe9;
+                width: 400px;
+                height: 300px;
+                z-index: 1;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            .absolute_top {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 400px;
+                height: 10px;
+                background-color: #ff7d6e;
+                z-index: 2;
+            }
+            .sec p{
+                color: #ff7d6e;
+                margin: 10px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="absolute_top"></div>
+        <div class="absolute_back">
+            <div class="sec">
+                <p>
+                    このような影（box-shadow）をつけて少し浮いたように見せた枠を作成してください。<br>
+                    背景は白<br>
+                    ミント風の配色は、#ffebe9<br>
+                    トップのボーダ色は、#ff7d6e<br>
+                    文字色は、#ff7d6e<br>
+                    子孫セレクターをつかって<br>
+                    marginを10px<br>
+                    paddingを20px<br>
+                    で設定してください。
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
