@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>C-9 課題</title>
+        <style>
+            .main {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .contentA {
+                width: 100%;
+                height: 50px;
+                position: relative;
+                background: pink;}
+
+            .contentB {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-weight: bold;
+            }
+
+            .contentC, .contentD {
+                width: 16px;
+                height: 400px;
+                background: greenyellow;
+            }
+
+            .contentE {
+                width: 100%;
+                height: 80px;
+                position: relative;
+                background: violet;
+            }
+
+            .contentF {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-weight: bold;
+            }
+
+            .contentG {
+                flex: 1;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contentA">
+            <div class="contentB">
+            header
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="contentC"></div>
+            <div class="contentG">content</div>
+            <div class="contentD"></div>
+        </div>
+        
+        <div class="contentE">
+            <div class="contentF">
+            footer
+            </div>
+        </div>
+    </body>
+</html>
