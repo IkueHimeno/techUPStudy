@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-12 課題</title>
+    <link rel="stylesheet" href="small.css" media="screen and (max-width:480px)">
+    <link rel="stylesheet" href="medium.css" media="screen and (min-width:481px) and (max-width:768px)">
+    <link rel="stylesheet" href="large.css" media="screen and (min-width:769px) and (max-width:1023px)">
+    <link rel="stylesheet" href="huge.css" media="screen and (min-width:1024px)">
+    <style>
+    @media screen and (max-width:480px) {
+        p {
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (min-width:480px) and (max-width:768px) {
+        p {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        p {
+            font-size: 25px;
+        }
+    }
+
+    @media screen and (min-width:1024px) {
+        p {
+            font-size: 30px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <p>画面のサイズによって文字の大きさが変わります</p>
+</body>
+</html>
