@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <meta charset="UTF-8">
+    <head>
+        <title>C-13 課題</title>
+        <style>
+            .wrapper_1 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+
+            .wrapper_2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                gap: 0;
+            }
+
+            .box1 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background: #0000ff;
+            }
+            .box2 {
+                background: #00ff00;
+            }
+            .box3 {
+                background: #ff0000;
+            }
+            .box4 {
+                background: rebeccapurple;
+            }
+            .box5 {
+                background: #ff00ff;
+            }
+            .box6 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background: brown;
+            }
+            .box7 {
+                background: skyblue;
+            }
+            .box8 {
+                background: white;
+            }
+            .box9 {
+                background: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper_1">
+            <div class="box1">header</div>
+            <div class="box2">content-1</div>
+            <div class="box3">content-2</div>
+        </div>
+            <div class="wrapper_2">
+            <div class="box7">content3-1</div>
+            <div class="box8">content3-2</div>
+            <div class="box9">content3-3</div>
+        </div>
+        <div class="wrapper_1">
+            <div class="box4">content4-1</div>
+            <div class="box5">content4-2</div>
+            <div class="box6">footer</div>
+        </div>
+    </body>
+</html>
