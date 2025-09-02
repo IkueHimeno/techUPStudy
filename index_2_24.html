@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="UTF-8">
+    <head>
+        <title>C-14 課題</title>
+        <style>
+            :root{
+                --my-cool-background: #348EC7;
+            }
+
+            body{
+                color: white;
+            }
+
+             .wrapper_1 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+
+            .wrapper_2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                gap: 0;
+            }
+
+            .box1 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background: var(--my-cool-background);
+            }
+
+            .box2 {
+                background: var(--my-cool-background);
+            }
+            
+            .box3 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background: var(--my-cool-background);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper_1">
+            <div class="box1">header</div>
+            <div class="box2">content-1</div>
+            <div class="box2">content-2</div>
+        </div>
+            <div class="wrapper_2">
+            <div class="box2">content3-1</div>
+            <div class="box2">content3-2</div>
+            <div class="box2">content3-3</div>
+        </div>
+        <div class="wrapper_1">
+            <div class="box2">content4-1</div>
+            <div class="box2">content4-2</div>
+            <div class="box3">footer</div>
+        </div>
+    </body>
+</html>
