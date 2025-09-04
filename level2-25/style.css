@@ -1,0 +1,65 @@
+/* 全体 */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* キャンペーンバナー */
+.campaign-banner {
+    background-color: #B30000;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campaign-banner img {
+    width: 80%;
+    max-width: 900px;
+    margin-left: 100px;
+    height: auto;
+    display: block;
+}
+
+/* トップページのメインビジュアル */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 237, 73);
+    padding: 0;
+}
+.main img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+}
+
+/* コロナに関するお知らせ */
+.colona {
+    color: #B30000;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    font-family: 'Yu Mincho', 'Hiragino Mincho Pro', 'MS PMincho', serif;
+}
+
+.colona-text {
+    color: #B30000;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.colona-box {
+    border: 1px solid #B30000;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Yu Mincho', 'Hiragino Mincho Pro', 'MS PMincho', serif;
+}
