@@ -22,6 +22,15 @@ body, html {
     display: block;
 }
 
+.campaign-banner2 {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
 /* トップページのメインビジュアル */
 .main {
     display: flex;
@@ -40,9 +49,9 @@ body, html {
 /* コロナに関するお知らせ */
 .colona {
     color: #B30000;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    margin: 20px 0 10px;
+    margin: 10px 0 10px;
     font-family: 'Yu Mincho', 'Hiragino Mincho Pro', 'MS PMincho', serif;
 }
 
@@ -50,16 +59,44 @@ body, html {
     color: #B30000;
     font-size: 14px;
     font-weight: bold;
-    line-height: 1.6;
+    line-height: 1.4;
     margin: 0;
 }
 
 .colona-box {
     border: 1px solid #B30000;
     padding: 20px;
-    max-width: 1200px;
-    margin: 30px auto;
+    max-width: 1000px;
+    margin: 24px auto;
     box-sizing: border-box;
     text-align: center;
+    font-family: 'Yu Mincho', 'Hiragino Mincho Pro', 'MS PMincho', serif;
+}
+
+/* 紹介文言 */
+
+.pual {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.pual-text {
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+    font-family: 'Yu Mincho', 'Hiragino Mincho Pro', 'MS PMincho', serif;
+    margin: 0;
+}
+
+.pual-textspace {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
     font-family: 'Yu Mincho', 'Hiragino Mincho Pro', 'MS PMincho', serif;
 }
