@@ -23,12 +23,21 @@ body, html {
 }
 
 .campaign-banner2 {
-    height: 60px;
+    background-color: #fcf3d4;
+    height: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+}
+
+.campaign-banner2 img {
+    transition: opacity 0.3s ease;
+}
+
+.campaign-banner2 img:hover {
+    opacity: 0.8;
 }
 
 /* トップページのメインビジュアル */
@@ -99,4 +108,51 @@ body, html {
     line-height: 1.6;
     font-weight: bold;
     font-family: 'Yu Mincho', 'Hiragino Mincho Pro', 'MS PMincho', serif;
+}
+
+.pual-info-box {
+    border: double 4px gold;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.pual-info-title {
+    color: black;
+    font-size: 24px;
+    line-height: 1.6;
+    font-weight: bold;
+    font-family: 'Yu Mincho', 'Hiragino Mincho Pro', 'MS PMincho', serif;
+    margin: 0 0 10px;
+}
+
+.highlight-red {
+    color: #B30000 !important;
+}
+
+.divider-line {
+    border: none;
+    border-top: 1px solid black;
+    margin: 1px auto 20px;
+    width: 80%;
+}
+
+/* こだわりの紹介 */
+
+.img-left {
+    text-align: left !important;
+    margin: 10px 0;
+}
+
+.img-right {
+    text-align: right !important;
+    margin: 10px 0;
+}
+
+.img-left img, .img-right img {
+    max-width: 80%;
+    height: auto;
+    display: inline-block;
 }
