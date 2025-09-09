@@ -192,7 +192,7 @@ body, html {
 
 .tea-content {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -252,4 +252,42 @@ body, html {
     line-height: 2;
     font-weight: bold;
     margin-top: 8px;
+}
+
+.highlight-yellow {
+    background-color: #fff176;
+    padding: 0 4px;
+}
+
+.g-note-box {
+    border: 1px solid #2e7d32;
+    padding: 14px;
+    display: block;
+    border-radius: 6px;
+}
+
+.g-note-text {
+    color: #2e7d32;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.g-note-box .note-img {
+    width: auto;
+    height: 26px;
+    margin-right: 0;
+    border-radius: 4px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.namacha-img {
+    min-width: 320px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
 }
