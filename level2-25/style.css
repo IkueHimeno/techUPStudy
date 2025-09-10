@@ -143,12 +143,12 @@ body, html {
 
 .img-left {
     text-align: left;
-    margin: 60px 0;
+    margin: 60px 0px 60px 100px;
 }
 
 .img-right {
     text-align: right;
-    margin: 60px 0;
+    margin: 60px 100px 60px 0px;
 }
 
 .img-left img,
@@ -290,4 +290,56 @@ body, html {
     border-radius: 8px;
     display: block;
     margin: 0 auto;
+}
+
+.r-note-box {
+    border: 1px solid rgba(45, 17, 17, 0.787);
+    padding: 14px;
+    display: block;
+    border-radius: 6px;
+}
+
+.r-note-text {
+    color: rgba(45, 17, 17, 0.787);
+    font-size: 16px;
+    line-height: 2;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.r-note-box .note-img {
+    width: auto;
+    height: 26px;
+    margin-right: 0;
+    border-radius: 4px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.roucha-img {
+    min-width: 320px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 美容タイトル */
+
+.biyou-tit {
+    display: block;
+    margin: 60px auto 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.beauty-text {
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+    font-family: 'Yu Mincho', 'Hiragino Mincho Pro', 'MS PMincho', serif;
+    margin: 20px 0;
+    text-align: center;
 }
