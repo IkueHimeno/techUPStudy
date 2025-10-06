@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+        <title>J-11 課題</title>
+    </head>
+    <body>
+        <p>J-11 課題</p>
+        <script>
+            window.onload = function () {
+                function event() {
+                    const now_time = new Date();
+                    let hour = now_time.getHours();
+                    let min = now_time.getMinutes();
+                    let sec = now_time.getSeconds();
+
+                    if ( hour < 10) hour = '0' + hour;
+                    if ( min < 10) min = '0' + min;
+                    if ( sec < 10) sec = '0' + sec;
+
+                    console.log(`${hour}:${min}:${sec}`);
+                }
+
+            let timer = setInterval(event, 1000);
+            }
+        </script>
+    </body> 
+</html>
