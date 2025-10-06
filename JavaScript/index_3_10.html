@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+        <title>J-7 課題</title>
+    </head>
+    <body>
+        <p>J-7 課題</p>
+        <script>
+            const name_array = ['山田さん','佐藤さん','内田さん'];
+            
+            console.log('最初に配列の値を表示します。')
+            for ( let i = 0; i < name_array.length; i++){
+                console.log( name_array[i] );
+            }
+
+            console.log('配列の値を１つ消します。');
+            const shiftName1 = name_array.shift();
+            console.log ( shiftName1 + 'を消しました。');
+
+            console.log ('残りを表示します。');
+            for ( let i =0; i < name_array.length; i++){
+                console.log( name_array[i] );
+            }
+
+            console.log ('配列の値を１つ消します。');
+            const shiftName2 = name_array.shift();
+            console.log ( shiftName2 + 'を消しました。');
+
+            console.log ('残りを表示します。');
+            for ( let i =0; i < name_array.length; i++){
+                console.log( name_array[i] );
+            }
+
+            console.log ('配列の値を１つ消します。');
+            const shiftName3 = name_array.shift();
+            console.log ( shiftName3 + 'を消しました。');
+
+            console.log('データがなくなりました。');
+
+            /* ヒントver. 
+            const hint_array = ['山田さん','佐藤さん','内田さん'];
+            console.log('最初に配列の値を表示します。')
+
+            for ( let i = 0; i < hint_array.length; i++){
+                console.log( hint_array[i] );
+            }
+            
+            while(hint_array.length > 0){
+                const shiftHint = hint_array.shift();
+                console.log ('配列の値を１つ消します。');
+                console.log ( shiftHint + 'を消しました。');
+                if(hint_array.length !==0){
+                    console.log ('残りを表示します。');
+                    for ( let i = 0; i < hint_array.length; i++){
+                            console.log( hint_array[i] );
+                        }
+                    } else {
+                        console.log('データがなくなりました。');
+                }
+            }
+            */
+        </script>
+    </body>    
+</html>
