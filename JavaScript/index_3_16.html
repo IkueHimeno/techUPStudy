@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+        <title>J-13 課題</title>
+    </head>
+    <body>
+        <h1>J-13 課題</h1>
+        <ul class="list-group">
+            <li class="list-group-item">100</li>
+            <li class="list-group-item">110</li>
+            <li class="list-group-item">120</li>
+            <li class="list-group-item">130</li>
+            <li class="list-group-item">140</li>
+        </ul>
+        <button id="change">変更</button>
+        <button id="reset">リセット</button>
+
+        <script>
+            var cnt = 0;
+
+            function event(){
+                if(cnt % 2 == 0){
+                    document.querySelector('h1').textContent="J-13 課題";
+                }else{
+                    document.querySelector('h1').textContent="J-13 Task";
+                }
+
+                cnt++;
+                if(cnt>100)cnt=0;
+            }
+
+            setInterval(event, 1000);
+            
+            var ul = document.querySelector('ul');
+            var liItems = ul.querySelectorAll('li');
+
+            var initialValues = [];
+
+            liItems.forEach(function(li){
+                initialValues.push(parseInt(li.textContent));
+            })
+
+            document.getElementById('change').addEventListener('click', function(){
+                liItems.forEach(function(li, i) {
+                    li.textContent = initialValues[i] * 10;
+                });
+            });
+
+            document.getElementById('reset').addEventListener('click', function(){
+                liItems.forEach(function(li, i){
+                    li.textContent = initialValues[i];
+                });
+            });
+        </script>
+    </body>    
+</html>
