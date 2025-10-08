@@ -5,7 +5,7 @@
         <title>J-13 課題</title>
     </head>
     <body>
-        <h1>J-13 課題</h1>
+        <title>J-13 課題</title>
         <ul class="list-group">
             <li class="list-group-item">100</li>
             <li class="list-group-item">110</li>
@@ -17,21 +17,6 @@
         <button id="reset">リセット</button>
 
         <script>
-            var cnt = 0;
-
-            function event(){
-                if(cnt % 2 == 0){
-                    document.querySelector('h1').textContent="J-13 課題";
-                }else{
-                    document.querySelector('h1').textContent="J-13 Task";
-                }
-
-                cnt++;
-                if(cnt>100)cnt=0;
-            }
-
-            setInterval(event, 1000);
-            
             var ul = document.querySelector('ul');
             var liItems = ul.querySelectorAll('li');
 
@@ -42,8 +27,8 @@
             })
 
             document.getElementById('change').addEventListener('click', function(){
-                liItems.forEach(function(li, i) {
-                    li.textContent = initialValues[i] * 10;
+                liItems.forEach(function(li) {
+                    li.textContent = parseInt(li.textContent) * 10;
                 });
             });
 
