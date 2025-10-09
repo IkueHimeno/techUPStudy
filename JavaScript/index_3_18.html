@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+        <title>J-15 課題</title>
+    </head>
+    <body>
+        <p>J-15 課題</p>
+
+        <form>
+            <input type="text" id="numberBox" value="0">
+            <button type="button" id="addButton">ボタン</button>
+        </form>
+
+        <script>
+            const numberBox = document.getElementById('numberBox');
+            const addButton = document.getElementById('addButton');
+
+            addButton.addEventListener('click', function(){
+                let currentNumber = parseInt(numberBox.value);
+                currentNumber = currentNumber + 1;
+                numberBox.value = currentNumber;
+            });
+        </script>
+    </body>    
+</html>
