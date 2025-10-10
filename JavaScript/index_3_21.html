@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>J-18 課題</title>
+    </head>
+    <body>
+        <p>J-18 課題</p>    
+        <canvas id = "chiikawa"></canvas>
+    </body>
+    <script>
+        var canvas = document.getElementById("chiikawa");
+        var ctx = canvas.getContext("2d");
+        var image = new Image();
+
+        image.src = "FmZ4SHSaEAE5Myo.png";
+        
+        image.onload = function () {
+            var canvasWidth = 500;
+            var canvasHeight = 500;
+            canvas.width = canvasWidth;
+            canvas.height = canvasHeight;
+
+            var centerX = canvasWidth / 2;
+            var centerY = canvasHeight / 2;
+
+            var radius = 150;
+            var angle = 0;
+        
+
+        function animate () {
+            ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+            var x = centerX + Math.cos(angle) * radius;
+            var y = centerY + Math.sin(angle) * radius;
+            ctx.drawImage(image, x-30, y-30, 60, 60);
+
+            angle += 0.01;
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    };
+    </script>   
+</html>
