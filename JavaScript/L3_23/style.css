@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comic Neue', sans-serif;
+    background: linear-gradient(to bottom, #ff4d73, #bff6d4);
+}
+
+.timer-container {
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#timer {
+    font-size: 80px;
+    margin: 5px;
+    padding: 10px;
+    font-weight: bold;
+    color: #494949;
+    line-height: 1;
+}
+
+p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ac2828;
+    line-height: 1;
+}
