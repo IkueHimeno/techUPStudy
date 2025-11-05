@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Zipファイルなど
+*.zip
+
+# 不要なフォルダ
+HTML_CSS/
+PHP/
+c:xamppmysqlbin
